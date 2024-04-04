@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class pallindrom_number{
+ public static boolean pall(int a){
+ int r=0,rev=0,temp=a;
+ while{
+ r = a % 10;
+ rev = rev*10 +r;
+ a = a/10;
+ }
+ return temp == rev;
+ }
+ public static void main(String args[]){
+ Scanner sc = new scanner(System.in);
+ System.out.println("Enter The Number");
+ int num = sc.nextInt();
+ if (pall(num)){
+ System.out.println("It is a pallindrom number");
+ }
+ else{
+ System.out.println("not a pallindrom number");
+ }
+ }
+ }
+ 
+ 
+ 
+ 
